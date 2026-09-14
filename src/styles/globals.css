@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url("/assets/g/fonts/montserrat/montserrat-r.woff2") format("woff2"),
+    url("/assets/g/fonts/montserrat/montserrat-r.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url("/assets/g/fonts/montserrat/montserrat-s-b.woff2") format("woff2"),
+    url("/assets/g/fonts/montserrat/montserrat-s-b.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url("/assets/g/fonts/montserrat/montserrat-b.woff2") format("woff2"),
+    url("/assets/g/fonts/montserrat/montserrat-b.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("/assets/g/fonts/open_sans/open_sans-r.woff2") format("woff2"),
+    url("/assets/g/fonts/open_sans/open_sans-r.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("/assets/g/fonts/open_sans/open_sans-s-b.woff2") format("woff2"),
+    url("/assets/g/fonts/open_sans/open_sans-s-b.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("/assets/g/fonts/open_sans/open_sans-b.woff2") format("woff2"),
+    url("/assets/g/fonts/open_sans/open_sans-b.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-brand-teal: #009c82;
+  --color-brand-teal-dark: #00806b;
+  --color-brand-gold: #f2a900;
+
+  --font-heading: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #222222;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+}
