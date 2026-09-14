@@ -6,6 +6,12 @@ import { ContactsPage } from '@/pages/ContactsPage'
 import { ContactFormPage } from '@/pages/ContactFormPage'
 import { CookiePolicyPage } from '@/pages/CookiePolicyPage'
 import { ValvesPage } from '@/pages/catalog/ValvesPage'
+import { ValveLuPage } from '@/pages/catalog/ValveLuPage'
+import { ValveNdtVdtPage } from '@/pages/catalog/ValveNdtVdtPage'
+import { ValveNktVktPage } from '@/pages/catalog/ValveNktVktPage'
+import { ValvePikPage } from '@/pages/catalog/ValvePikPage'
+import { MoscowFactoryHistoryPage } from '@/pages/MoscowFactoryHistoryPage'
+import { KrasnodarFactoryHistoryPage } from '@/pages/KrasnodarFactoryHistoryPage'
 import { SparePartsPage } from '@/pages/catalog/SparePartsPage'
 import { CompressorBasePage } from '@/pages/catalog/CompressorBasePage'
 import { CompressorCylinderPage } from '@/pages/catalog/CompressorCylinderPage'
@@ -38,6 +44,12 @@ export function App() {
         <Route path="/forma-obratnoj-svyazi" element={<ContactFormPage />} />
         <Route path="/cookie" element={<CookiePolicyPage />} />
         <Route path="/klapany" element={<ValvesPage />} />
+        <Route path="/klapany/klapan-lu" element={<ValveLuPage />} />
+        <Route path="/klapany/klapan-ndt-vdt" element={<ValveNdtVdtPage />} />
+        <Route path="/klapany/klapan-nkt-vkt" element={<ValveNktVktPage />} />
+        <Route path="/klapany/klapan-pik" element={<ValvePikPage />} />
+        <Route path="/moskovskij-kompressornyj-zavod-borec" element={<MoscowFactoryHistoryPage />} />
+        <Route path="/krasnodarskij-kompressornyj-zavod-istoriya" element={<KrasnodarFactoryHistoryPage />} />
         <Route path="/zapchasti-dlya-kompressora" element={<SparePartsPage />} />
         <Route path="/zapchasti-dlya-kompressora/baza-porshnevogo-kompressora" element={<CompressorBasePage />} />
         <Route path="/zapchasti-dlya-kompressora/clindr-kompressora" element={<CompressorCylinderPage />} />
