@@ -7,6 +7,11 @@ import { ContactFormPage } from '@/pages/ContactFormPage'
 import { CookiePolicyPage } from '@/pages/CookiePolicyPage'
 import { ValvesPage } from '@/pages/catalog/ValvesPage'
 import { SparePartsPage } from '@/pages/catalog/SparePartsPage'
+import { CompressorBasePage } from '@/pages/catalog/CompressorBasePage'
+import { CompressorCylinderPage } from '@/pages/catalog/CompressorCylinderPage'
+import { CompressorLinerPage } from '@/pages/catalog/CompressorLinerPage'
+import { CrankshaftPage } from '@/pages/catalog/CrankshaftPage'
+import { ConnectingRodPage } from '@/pages/catalog/ConnectingRodPage'
 import { CompressorsPage } from '@/pages/catalog/CompressorsPage'
 import { PistonCompressorsPage } from '@/pages/catalog/PistonCompressorsPage'
 import { PistonCompressorModelPage } from '@/pages/catalog/PistonCompressorModelPage'
@@ -34,6 +39,11 @@ export function App() {
         <Route path="/cookie" element={<CookiePolicyPage />} />
         <Route path="/klapany" element={<ValvesPage />} />
         <Route path="/zapchasti-dlya-kompressora" element={<SparePartsPage />} />
+        <Route path="/zapchasti-dlya-kompressora/baza-porshnevogo-kompressora" element={<CompressorBasePage />} />
+        <Route path="/zapchasti-dlya-kompressora/clindr-kompressora" element={<CompressorCylinderPage />} />
+        <Route path="/zapchasti-dlya-kompressora/gilza-porshnevogo-kompressora" element={<CompressorLinerPage />} />
+        <Route path="/zapchasti-dlya-kompressora/kolenval-kompressora" element={<CrankshaftPage />} />
+        <Route path="/zapchasti-dlya-kompressora/shatun-kompressora-borec" element={<ConnectingRodPage />} />
         <Route path="/kompressory" element={<CompressorsPage />} />
         <Route path="/kompressory/porshnevye-kompressory" element={<PistonCompressorsPage />} />
         <Route path="/kompressory/porshnevye-kompressory/*" element={<PistonCompressorModelPage />} />

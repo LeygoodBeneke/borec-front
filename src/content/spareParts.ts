@@ -26,8 +26,8 @@ export const sparePartsSections: ContentSection[] = [
           <tr>
             <td>
               <ul>
-                <li><a href="/zapasnye-chasti/baza-porshnevogo-kompressora">База</a></li>
-                <li><a href="/zapasnye-chasti/clindr-kompressora">Цилиндр</a></li>
+                <li><a href="/zapchasti-dlya-kompressora/baza-porshnevogo-kompressora">База</a></li>
+                <li><a href="/zapchasti-dlya-kompressora/clindr-kompressora">Цилиндр</a></li>
                 <li><a href="/zapchasti-dlya-kompressora/gilza-porshnevogo-kompressora">Гильза</a></li>
                 <li>Поршень</li>
                 <li>Шток</li>
@@ -44,7 +44,7 @@ export const sparePartsSections: ContentSection[] = [
             </td>
             <td>
               <ul>
-                <li><a href="/zapasnye-chasti/klapany-pik-nkt-vkt-kk-lu-ndt-vdt">Клапан</a></li>
+                <li><a href="/klapany">Клапан</a></li>
                 <li>Кольцо</li>
                 <li>Вкладыш</li>
                 <li>Сальник</li>
