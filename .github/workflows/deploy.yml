@@ -8,7 +8,6 @@ on:
 env:
   DEPLOY_HOST: 46.23.96.145
   DEPLOY_USER: root
-  DEPLOY_PATH: /opt/borec-front
 
 jobs:
   deploy:
@@ -24,23 +23,16 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
 
-      - name: Sync files to server
-        run: |
-          rsync -az --delete \
-            --exclude node_modules \
-            --exclude dist \
-            --exclude .git \
-            --exclude .github \
-            --exclude .serena \
-            --exclude '*.tsbuildinfo' \
-            ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH/"
+      - name: Build image
+        run: docker build -t borec-front:latest .
 
-      - name: Build and restart container
+      - name: Upload image to server
+        run: docker save borec-front:latest | gzip | ssh "$DEPLOY_USER@$DEPLOY_HOST" "gunzip | docker load"
+
+      - name: Restart container
         run: |
           ssh "$DEPLOY_USER@$DEPLOY_HOST" "
             set -e
-            cd $DEPLOY_PATH
-            docker build -t borec-front:latest .
             docker rm -f borec-front || true
             docker run -d --name borec-front --restart unless-stopped -p 80:80 borec-front:latest
             docker image prune -f
