@@ -15,7 +15,7 @@ export function PistonCompressorModelPage() {
   return (
     <div>
       <Breadcrumb label={model.title} />
-      <div className="mx-auto max-w-6xl px-6 py-6">
+      <div className="mx-auto max-w-7xl px-6 py-6">
         <h1 className="mb-8 text-3xl font-bold text-brand-teal">{model.title}</h1>
         <ProseSection html={model.html} />
       </div>

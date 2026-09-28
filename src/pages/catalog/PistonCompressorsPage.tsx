@@ -8,7 +8,7 @@ export function PistonCompressorsPage() {
   return (
     <div>
       <Breadcrumb label={pistonCompressorsTitle} />
-      <div className="mx-auto max-w-6xl px-6 py-6">
+      <div className="mx-auto max-w-7xl px-6 py-6">
         <h1 className="mb-8 text-3xl font-bold text-brand-teal">{pistonCompressorsTitle}</h1>
         <ContentSections sections={pistonCompressorsSections} />
 
