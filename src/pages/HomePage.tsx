@@ -9,7 +9,7 @@ export function HomePage() {
         className="bg-slate-800 bg-cover bg-center py-8"
         style={{ backgroundImage: 'url(/assets/d/bg.jpg)' }}
       >
-        <div className="mx-auto max-w-6xl px-6">
+        <div className="mx-auto max-w-7xl px-6">
           <div className="aspect-video w-full max-w-2xl overflow-hidden rounded-md shadow-lg">
             <iframe
               className="h-full w-full"
@@ -22,7 +22,7 @@ export function HomePage() {
         </div>
       </div>
 
-      <section className="mx-auto max-w-6xl px-6 py-10">
+      <section className="mx-auto max-w-7xl px-6 py-10">
         <p className="mb-6 text-slate-700">
           АО «Компрессорный завод БОРЕЦ» информирует всех заинтересованных лиц, о том, что в настоящее
           время производственная площадка завода находится по адресу: г. Краснодар, Ростовское шоссе,
@@ -31,7 +31,7 @@ export function HomePage() {
         <IconLinkGrid items={catalogIcons} />
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-10">
+      <section className="mx-auto max-w-7xl px-6 py-10">
         <SectionHeading>Компрессорные установки</SectionHeading>
         <p className="mb-6 text-slate-700">
           На сегодняшний день мы осуществляем специализированные решения, производим компрессорные
@@ -52,7 +52,7 @@ export function HomePage() {
         </p>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-10">
+      <section className="mx-auto max-w-7xl px-6 py-10">
         <SectionHeading>Наша история</SectionHeading>
         <ol className="space-y-6 border-l-2 border-brand-teal/30 pl-6">
           {history.map((item) => (
@@ -73,7 +73,7 @@ export function HomePage() {
         </ol>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-10">
+      <section className="mx-auto max-w-7xl px-6 py-10">
         <div className="grid gap-6 rounded-lg bg-slate-50 p-6 sm:grid-cols-3">
           {qualityBlocks.map((text, i) => (
             <p key={i} className="whitespace-pre-line text-sm text-slate-700">

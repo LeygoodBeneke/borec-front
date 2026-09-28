@@ -20,7 +20,7 @@ export function ProductionPage() {
     <div>
       <Breadcrumb label="Производство" />
 
-      <div className="mx-auto max-w-6xl px-6 py-6">
+      <div className="mx-auto max-w-7xl px-6 py-6">
         <h1 className="mb-8 text-3xl font-bold text-brand-teal">Производство</h1>
 
         <div className="mb-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
