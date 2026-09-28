@@ -22,7 +22,7 @@ export function ContactFormPage() {
     <div>
       <Breadcrumb label="Форма обратной связи" />
 
-      <div className="mx-auto max-w-6xl px-6 py-6">
+      <div className="mx-auto max-w-7xl px-6 py-6">
         <h1 className="mb-8 text-3xl font-bold text-brand-teal">Форма обратной связи</h1>
 
         <div className="max-w-md">
