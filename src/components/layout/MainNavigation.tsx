@@ -41,7 +41,7 @@ function NavLink({ item, flat = false }: { item: NavItem; flat?: boolean }) {
 export function MainNavigation({ flat = false }: { flat?: boolean }) {
   return (
     <nav className={flat ? '' : 'bg-brand-teal'}>
-      <ul className={`mx-auto flex max-w-7xl flex-wrap ${flat ? 'gap-1' : 'justify-between px-6'}`}>
+      <ul className={`mx-auto flex max-w-site flex-wrap ${flat ? 'gap-1' : 'justify-between px-6'}`}>
         {navItems.map((item) => (
           <NavLink key={item.label} item={item} flat={flat} />
         ))}

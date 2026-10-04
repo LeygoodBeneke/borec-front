@@ -5,33 +5,32 @@ import { SectionHeading } from '@/components/common/SectionHeading'
 export function HomePage() {
   return (
     <div>
-      <div
-        className="bg-slate-800 bg-cover bg-center py-8"
-        style={{ backgroundImage: 'url(/assets/d/bg.jpg)' }}
-      >
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="aspect-video w-full max-w-2xl overflow-hidden rounded-md shadow-lg">
-            <iframe
-              className="h-full w-full"
-              src="https://rutube.ru/play/embed/6c26db909d9b485d197e18b62268e430"
-              allow="clipboard-write; autoplay"
-              allowFullScreen
-              title="О заводе"
-            />
+      <div className="relative p-5">
+        <div
+          className="absolute inset-0 bg-slate-800 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/assets/d/bg.jpg)' }}
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,156,130,0.9)_0%,rgba(0,156,130,0.4)_100%)]" />
+        <div className="relative flex items-center max-[1440px]:mx-auto max-[1440px]:max-w-[1214px] max-[768px]:flex-col">
+          <div className="w-[639px] shrink-0 max-[1440px]:w-[410px] max-[1024px]:max-w-[40%] max-[768px]:w-full max-[768px]:max-w-none">
+            <div className="aspect-video w-full overflow-hidden rounded-[5px]">
+              <iframe
+                className="h-full w-full"
+                src="https://rutube.ru/play/embed/6c26db909d9b485d197e18b62268e430"
+                allow="clipboard-write; autoplay"
+                allowFullScreen
+                title="О заводе"
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      <section className="mx-auto max-w-7xl px-6 py-10">
-        <p className="mb-6 text-slate-700">
-          АО «Компрессорный завод БОРЕЦ» информирует всех заинтересованных лиц, о том, что в настоящее
-          время производственная площадка завода находится по адресу: г. Краснодар, Ростовское шоссе,
-          14/2.
-        </p>
+      <section className="mx-auto max-w-site px-6 py-10">
         <IconLinkGrid items={catalogIcons} />
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-10">
+      <section className="mx-auto max-w-site px-6 py-10">
         <SectionHeading>Компрессорные установки</SectionHeading>
         <p className="mb-6 text-slate-700">
           На сегодняшний день мы осуществляем специализированные решения, производим компрессорные
@@ -52,7 +51,7 @@ export function HomePage() {
         </p>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-10">
+      <section className="mx-auto max-w-site px-6 py-10">
         <SectionHeading>Наша история</SectionHeading>
         <ol className="space-y-6 border-l-2 border-brand-teal/30 pl-6">
           {history.map((item) => (
@@ -73,7 +72,7 @@ export function HomePage() {
         </ol>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-10">
+      <section className="mx-auto max-w-site px-6 py-10">
         <div className="grid gap-6 rounded-lg bg-slate-50 p-6 sm:grid-cols-3">
           {qualityBlocks.map((text, i) => (
             <p key={i} className="whitespace-pre-line text-sm text-slate-700">

@@ -62,6 +62,8 @@
   --color-brand-teal-dark: #00806b;
   --color-brand-gold: #f2a900;
 
+  --container-site: 85.5rem;
+
   --font-heading: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Open Sans", ui-sans-serif, system-ui, sans-serif;
 }

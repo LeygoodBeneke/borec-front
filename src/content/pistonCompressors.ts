@@ -11,7 +11,7 @@ export const pistonCompressorsSections: ContentSection[] = [
 
 <h2 style="text-align: justify;"><strong>С оппозитным расположением цилиндров</strong></h2>
 
-<p><img alt="Оппозитный компрессор" src="/thumb/2/6_KkiRqcsr0PnoZ-jzfipw/r/d/oppozitnyj_kompressor.jpg" style="border-width: 0px; width: 254px; height: 191px; float: right; margin-left: 5px; margin-right: 5px;" /></p>
+<p><img alt="Оппозитный компрессор" src="/assets/thumb/2/6_KkiRqcsr0PnoZ-jzfipw/r/d/oppozitnyj_kompressor.jpg" style="border-width: 0px; width: 254px; height: 191px; float: right; margin-left: 5px; margin-right: 5px;" /></p>
 
 <p style="text-align: justify;">К последним относят и оппозитные агрегаты со встроенной автоматической системой защиты и сигнализацией. Поршневой компрессор с таким положением цилиндра предусматривает водное охлаждение, а также обладает мощностью в 220 киловатт. Кроме того, поршневой компрессор в любой модификации оснащён ресивером, представляющим собой особое воздухозапасающее отделение различного объёма, благодаря чему создаются условия для бесперебойной работы. У упомянутой выше модели существуют вариации на 24, 50, 150 литров, а также на 270, 300, 430 литров и т.п.<br />
 <br />
@@ -653,7 +653,7 @@ export const pistonCompressorsSections: ContentSection[] = [
 
 <p style="text-align: justify;"><strong style="font-size: 1.5em;">С угловым расположением цилиндров</strong></p>
 
-<p><img alt="Угловой компрессор" src="/thumb/2/NrBtGi9Ifr7IlNWOTNINHQ/r/d/uglovoj_kompressor.jpg" style="border-width: 0px; float: right;" title="" /></p>
+<p><img alt="Угловой компрессор" src="/assets/thumb/2/NrBtGi9Ifr7IlNWOTNINHQ/r/d/uglovoj_kompressor.jpg" style="border-width: 0px; float: right;" title="" /></p>
 
 <p style="text-align: justify;">В отличие от других видов, поршневые компрессоры с угловым положением воздушных цилиндров оснащены асинхронным двигателем, встроенным в несущую раму конструкции. Производительность всасывания таких устройств достигает 40 кубических метров в минуту при давлении до 401 атмосфер. Для лучшего понимания устройства различных поршневых компрессоров следует разобраться в условных обозначениях в названиях каждой модели.<br />
 <br />
