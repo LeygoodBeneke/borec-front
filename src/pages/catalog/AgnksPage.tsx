@@ -6,8 +6,8 @@ export function AgnksPage() {
   return (
     <div>
       <Breadcrumb label={agnksTitle} />
-      <div className="mx-auto max-w-7xl px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{agnksTitle}</h1>
+      <div className="mx-auto max-w-site px-6 py-6">
+        <h1 className="mb-8 text-3xl font-bold text-heading">{agnksTitle}</h1>
         <ContentSections sections={agnksSections} />
       </div>
     </div>

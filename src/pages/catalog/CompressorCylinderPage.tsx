@@ -6,8 +6,8 @@ export function CompressorCylinderPage() {
   return (
     <div>
       <Breadcrumb label={compressorCylinderTitle} />
-      <div className="mx-auto max-w-7xl px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{compressorCylinderTitle}</h1>
+      <div className="mx-auto max-w-site px-6 py-6">
+        <h1 className="mb-8 text-3xl font-bold text-heading">{compressorCylinderTitle}</h1>
         <div className="mb-6 aspect-video max-w-xl overflow-hidden rounded-md">
           <iframe
             className="h-full w-full"

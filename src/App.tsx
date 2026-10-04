@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { PageLayout } from '@/components/layout/PageLayout'
 import { HomePage } from '@/pages/HomePage'
@@ -33,6 +34,8 @@ import { NewsDetailPage } from '@/pages/company/NewsDetailPage'
 import { CareersPage } from '@/pages/company/CareersPage'
 import { RepairPage } from '@/pages/company/RepairPage'
 import { ReengineeringPage } from '@/pages/company/ReengineeringPage'
+
+const SearchPage = lazy(() => import('@/pages/SearchPage').then((m) => ({ default: m.SearchPage })))
 
 export function App() {
   return (
@@ -71,6 +74,14 @@ export function App() {
         <Route path="/vakansii" element={<CareersPage />} />
         <Route path="/remont-porshnevogo-kompressora" element={<RepairPage />} />
         <Route path="/reinzhiniring-kompressora" element={<ReengineeringPage />} />
+        <Route
+          path="/search"
+          element={
+            <Suspense fallback={null}>
+              <SearchPage />
+            </Suspense>
+          }
+        />
       </Routes>
     </PageLayout>
   )

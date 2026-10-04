@@ -7,8 +7,8 @@ export function CookiePolicyPage() {
     <div>
       <Breadcrumb label={cookiePolicyTitle} />
 
-      <div className="mx-auto max-w-7xl px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{cookiePolicyTitle}</h1>
+      <div className="mx-auto max-w-site px-6 py-6">
+        <h1 className="mb-8 text-3xl font-bold text-heading">{cookiePolicyTitle}</h1>
 
         {cookiePolicySections.map((html, index) => (
           <ProseSection key={index} html={html} />

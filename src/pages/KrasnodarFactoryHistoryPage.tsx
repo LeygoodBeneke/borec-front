@@ -6,8 +6,8 @@ export function KrasnodarFactoryHistoryPage() {
   return (
     <div>
       <Breadcrumb label={krasnodarFactoryHistoryTitle} />
-      <div className="mx-auto max-w-7xl px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{krasnodarFactoryHistoryTitle}</h1>
+      <div className="mx-auto max-w-site px-6 py-6">
+        <h1 className="mb-8 text-3xl font-bold text-heading">{krasnodarFactoryHistoryTitle}</h1>
         <ContentSections sections={krasnodarFactoryHistorySections} />
       </div>
     </div>

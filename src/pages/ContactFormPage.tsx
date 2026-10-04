@@ -22,8 +22,8 @@ export function ContactFormPage() {
     <div>
       <Breadcrumb label="Форма обратной связи" />
 
-      <div className="mx-auto max-w-7xl px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">Форма обратной связи</h1>
+      <div className="mx-auto max-w-site px-6 py-6">
+        <h1 className="mb-8 text-3xl font-bold text-heading">Форма обратной связи</h1>
 
         <div className="max-w-md">
           {submitted ? (
@@ -32,7 +32,7 @@ export function ContactFormPage() {
             </p>
           ) : (
             <>
-              <h2 className="text-xl font-semibold text-brand-teal">Получите консультацию</h2>
+              <h2 className="text-xl font-semibold text-heading">Получите консультацию</h2>
               <p className="mb-6 text-slate-600">Свяжемся с вами в ближайшее время</p>
 
               <form onSubmit={handleSubmit} className="space-y-4">

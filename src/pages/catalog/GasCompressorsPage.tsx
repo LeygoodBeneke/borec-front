@@ -6,8 +6,8 @@ export function GasCompressorsPage() {
   return (
     <div>
       <Breadcrumb label="Газовые компрессоры" />
-      <div className="mx-auto max-w-7xl px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{gasCompressorsTitle}</h1>
+      <div className="mx-auto max-w-site px-6 py-6">
+        <h1 className="mb-8 text-3xl font-bold text-heading">{gasCompressorsTitle}</h1>
         <ContentSections sections={gasCompressorsSections} />
       </div>
     </div>

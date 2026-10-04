@@ -60,7 +60,9 @@
 @theme {
   --color-brand-teal: #009c82;
   --color-brand-teal-dark: #00806b;
-  --color-brand-gold: #f2a900;
+  --color-heading: #1f1f1f;
+
+  --container-site: 85.5rem;
 
   --font-heading: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Open Sans", ui-sans-serif, system-ui, sans-serif;
@@ -76,4 +78,41 @@ h2,
 h3,
 h4 {
   font-family: var(--font-heading);
+}
+
+/* Legacy CMS content carries inline fixed widths and floats; !important is
+   needed to beat those inline styles. */
+.prose img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.prose table {
+  display: block;
+  max-width: 100%;
+  width: auto !important;
+  overflow-x: auto;
+}
+
+.prose iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 960px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  [id] {
+    scroll-margin-top: 64px;
+  }
+}
+
+@media (max-width: 640px) {
+  .prose img[style*="float"],
+  .prose img[align] {
+    float: none !important;
+    display: block;
+    margin: 0 auto 1rem !important;
+  }
 }

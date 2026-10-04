@@ -6,8 +6,8 @@ export function NewsPage() {
   return (
     <div>
       <Breadcrumb label="Новости" />
-      <div className="mx-auto max-w-7xl px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{newsTitle}</h1>
+      <div className="mx-auto max-w-site px-6 py-6">
+        <h1 className="mb-8 text-3xl font-bold text-heading">{newsTitle}</h1>
         <NewsList items={newsItems} />
       </div>
     </div>
