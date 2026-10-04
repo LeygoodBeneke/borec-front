@@ -7,7 +7,7 @@ export function ValveLuPage() {
     <div>
       <Breadcrumb label={valveLuTitle} />
       <div className="mx-auto max-w-site px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{valveLuTitle}</h1>
+        <h1 className="mb-8 text-3xl font-bold text-heading">{valveLuTitle}</h1>
         <ContentSections sections={valveLuSections} />
       </div>
     </div>

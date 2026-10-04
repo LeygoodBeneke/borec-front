@@ -7,7 +7,7 @@ export function ValveNktVktPage() {
     <div>
       <Breadcrumb label={valveNktVktTitle} />
       <div className="mx-auto max-w-site px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{valveNktVktTitle}</h1>
+        <h1 className="mb-8 text-3xl font-bold text-heading">{valveNktVktTitle}</h1>
         <ContentSections sections={valveNktVktSections} />
       </div>
     </div>

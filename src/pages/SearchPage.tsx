@@ -58,7 +58,7 @@ function highlight(value: string, words: string[]): ReactNode[] {
       const part = value.slice(start, i)
       nodes.push(
         marked[start] ? (
-          <mark key={start} className="rounded-sm bg-brand-gold/30 text-inherit">
+          <mark key={start} className="rounded-sm bg-brand-teal/15 text-inherit">
             {part}
           </mark>
         ) : (
@@ -92,7 +92,7 @@ export function SearchPage() {
       <Breadcrumb label="Поиск" />
 
       <div className="mx-auto max-w-site px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">Поиск</h1>
+        <h1 className="mb-8 text-3xl font-bold text-heading">Поиск</h1>
 
         <form key={query} onSubmit={handleSubmit} role="search" className="mb-8 flex max-w-2xl gap-3">
           <input

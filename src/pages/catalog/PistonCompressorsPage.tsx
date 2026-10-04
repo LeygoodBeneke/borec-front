@@ -9,10 +9,10 @@ export function PistonCompressorsPage() {
     <div>
       <Breadcrumb label={pistonCompressorsTitle} />
       <div className="mx-auto max-w-site px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{pistonCompressorsTitle}</h1>
+        <h1 className="mb-8 text-3xl font-bold text-heading">{pistonCompressorsTitle}</h1>
         <ContentSections sections={pistonCompressorsSections} />
 
-        <h2 className="mb-4 mt-8 text-xl font-semibold text-brand-teal">Модели поршневых компрессоров</h2>
+        <h2 className="mb-4 mt-8 text-xl font-semibold text-heading">Модели поршневых компрессоров</h2>
         <ul className="grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3 md:grid-cols-4">
           {pistonCompressorModels.map((model) => (
             <li key={model.slug}>

@@ -7,7 +7,7 @@ export function CareersPage() {
     <div>
       <Breadcrumb label={careersTitle} />
       <div className="mx-auto max-w-site px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{careersTitle}</h1>
+        <h1 className="mb-8 text-3xl font-bold text-heading">{careersTitle}</h1>
         <ContentSections sections={careersSections} />
       </div>
     </div>

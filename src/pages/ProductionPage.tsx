@@ -21,7 +21,7 @@ export function ProductionPage() {
       <Breadcrumb label="Производство" />
 
       <div className="mx-auto max-w-site px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">Производство</h1>
+        <h1 className="mb-8 text-3xl font-bold text-heading">Производство</h1>
 
         <div className="mb-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
           {facilities.map((facility) => (

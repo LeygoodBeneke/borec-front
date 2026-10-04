@@ -7,7 +7,7 @@ export function MoscowFactoryHistoryPage() {
     <div>
       <Breadcrumb label={moscowFactoryHistoryTitle} />
       <div className="mx-auto max-w-site px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{moscowFactoryHistoryTitle}</h1>
+        <h1 className="mb-8 text-3xl font-bold text-heading">{moscowFactoryHistoryTitle}</h1>
         <ContentSections sections={moscowFactoryHistorySections} />
       </div>
     </div>

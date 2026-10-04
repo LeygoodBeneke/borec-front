@@ -7,7 +7,7 @@ export function CompressorLinerPage() {
     <div>
       <Breadcrumb label={compressorLinerTitle} />
       <div className="mx-auto max-w-site px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{compressorLinerTitle}</h1>
+        <h1 className="mb-8 text-3xl font-bold text-heading">{compressorLinerTitle}</h1>
         <ContentSections sections={compressorLinerSections} />
       </div>
     </div>

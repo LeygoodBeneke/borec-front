@@ -10,7 +10,7 @@ export function ProseSection({ html }: { html: string }) {
 
   return (
     <div
-      className="prose prose-slate mb-6 max-w-none prose-p:my-3 prose-a:text-brand-teal"
+      className="prose prose-slate mb-6 max-w-none prose-headings:text-heading prose-p:my-3 prose-a:text-brand-teal"
       dangerouslySetInnerHTML={{ __html: clean }}
     />
   )

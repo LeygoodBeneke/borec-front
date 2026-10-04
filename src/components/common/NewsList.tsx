@@ -19,7 +19,7 @@ export function NewsList({ items }: { items: NewsItem[] }) {
           <div className="min-w-0">
             <p className="text-xs font-semibold uppercase tracking-wide text-brand-teal">{item.date}</p>
             <Link to={`/novosti/${item.slug}`}>
-              <h3 className="mt-1 text-lg font-semibold text-brand-teal hover:underline">{item.title}</h3>
+              <h3 className="mt-1 text-lg font-semibold text-heading hover:underline">{item.title}</h3>
             </Link>
             {item.teaser && <p className="mt-1 text-slate-700">{item.teaser}</p>}
             <Link to={`/novosti/${item.slug}`} className="text-sm text-brand-teal hover:underline">

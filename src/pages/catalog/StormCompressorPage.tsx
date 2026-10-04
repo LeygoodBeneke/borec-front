@@ -7,7 +7,7 @@ export function StormCompressorPage() {
     <div>
       <Breadcrumb label={stormCompressorTitle} />
       <div className="mx-auto max-w-site px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{stormCompressorTitle}</h1>
+        <h1 className="mb-8 text-3xl font-bold text-heading">{stormCompressorTitle}</h1>
         <ContentSections sections={stormCompressorSections} />
       </div>
     </div>

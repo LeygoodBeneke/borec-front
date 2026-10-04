@@ -7,7 +7,7 @@ export function ValvesPage() {
     <div>
       <Breadcrumb label={valvesTitle} />
       <div className="mx-auto max-w-site px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{valvesTitle}</h1>
+        <h1 className="mb-8 text-3xl font-bold text-heading">{valvesTitle}</h1>
         <ContentSections sections={valvesSections} />
       </div>
     </div>

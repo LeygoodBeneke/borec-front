@@ -7,7 +7,7 @@ export function Compressor2vm4Page() {
     <div>
       <Breadcrumb label={compressor2vm4Title} />
       <div className="mx-auto max-w-site px-6 py-6">
-        <h1 className="mb-8 text-3xl font-bold text-brand-teal">{compressor2vm4Title}</h1>
+        <h1 className="mb-8 text-3xl font-bold text-heading">{compressor2vm4Title}</h1>
         <ContentSections sections={compressor2vm4Sections} />
       </div>
     </div>
