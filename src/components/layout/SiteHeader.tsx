@@ -16,15 +16,6 @@ function HeaderLink({ to, icon, children }: { to: string; icon: HeaderIconName; 
   )
 }
 
-function AddressNotice() {
-  return (
-    <div className="mx-auto max-w-site px-6 py-3">
-      <p className="rounded-[5px] bg-[#0066ff] px-[15px] py-3 text-[20px] leading-[1.2] text-white max-[1024px]:text-base max-[768px]:text-[15px]">
-        С 2008 года производственная площадка завода находится по адресу: г. Краснодар, Ростовское шоссе, 14/2.
-      </p>
-    </div>
-  )
-}
 
 const MOBILE_NAV_ID = 'mobile-nav'
 
@@ -103,8 +94,10 @@ export function SiteHeader() {
                 <p className="text-[40px] leading-[35px] font-bold text-[#303030] max-[1680px]:text-[31px] max-[1440px]:leading-[29px] max-[1260px]:text-[26px] max-[1260px]:leading-[1.25]">
                   АО &quot;Компрессорный завод БОРЕЦ&quot;
                 </p>
-                <p className="mt-[13px] text-[24px] leading-[22px] text-[#303030] max-[1680px]:text-[19px] max-[1440px]:mt-2.5 max-[1440px]:leading-[18px] max-[1260px]:text-base max-[1260px]:leading-[1.25]">
-                  основан в 1897 году в Москве
+                <p className="mt-[13px] text-[20px] leading-[1.3] text-[#303030] max-[1680px]:text-[17px] max-[1440px]:mt-2.5 max-[1260px]:text-[15px] max-[1260px]:leading-[1.25]">
+                  основан в 1897 году в Москве<br />
+                  с 2008 года производственная площадка находится по адресу:{' '}
+                  <span className="whitespace-nowrap">г. Краснодар, Ростовское шоссе, 14/2</span>
                 </p>
               </div>
             </div>
@@ -130,8 +123,6 @@ export function SiteHeader() {
             </div>
           </div>
         </div>
-
-        {pathname === '/' && <AddressNotice />}
 
         <MainNavigation />
       </header>
