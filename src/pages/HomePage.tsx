@@ -5,12 +5,11 @@ import { SectionHeading } from '@/components/common/SectionHeading'
 export function HomePage() {
   return (
     <div>
-      <div className="relative p-5">
+      <div className="mt-4 relative p-5">
         <div
           className="absolute inset-0 bg-slate-800 bg-cover bg-center"
           style={{ backgroundImage: 'url(/assets/d/bg.jpg)' }}
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,156,130,0.9)_0%,rgba(0,156,130,0.4)_100%)]" />
         <div className="relative flex items-center max-[1440px]:mx-auto max-[1440px]:max-w-[1214px] max-[768px]:flex-col">
           <div className="w-[639px] shrink-0 max-[1440px]:w-[410px] max-[1024px]:max-w-[40%] max-[768px]:w-full max-[768px]:max-w-none">
             <div className="aspect-video w-full overflow-hidden rounded-[5px]">

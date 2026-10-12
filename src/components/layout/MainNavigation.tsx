@@ -18,7 +18,7 @@ function NavLink({ item, flat = false, isOpen = false, onOpenChange }: NavLinkPr
 
   const linkClasses = flat
     ? 'block px-3 py-2 text-sm font-semibold text-white underline-offset-4 hover:underline max-[640px]:flex max-[640px]:min-h-11 max-[640px]:items-center max-[640px]:px-0'
-    : 'block px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-teal-dark'
+    : 'block px-4 py-3.5 text-base font-semibold text-white transition-colors hover:bg-brand-teal-dark'
 
   // Only keyboard focus opens the dropdown: a mouse click also focuses the
   // toggle, and opening on that focus would make the click close it again.
