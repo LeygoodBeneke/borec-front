@@ -1,8 +1,11 @@
+import { useCookieConsent } from '@/hooks/useCookieConsent'
 import { Breadcrumb } from '@/components/common/Breadcrumb'
 import { ProseSection } from '@/components/common/ProseSection'
 import { contactInfo } from '@/content/contacts'
 
 export function ContactsPage() {
+  const { hasConsent } = useCookieConsent()
+
   return (
     <div>
       <Breadcrumb label="Контакты" />
@@ -48,12 +51,18 @@ export function ContactsPage() {
           </div>
 
           <div className="aspect-video overflow-hidden rounded-md">
-            <iframe
-              title={contactInfo.map.label}
-              className="h-full w-full border-0"
-              loading="lazy"
-              src={`https://yandex.ru/map-widget/v1/?ll=${contactInfo.map.lng}%2C${contactInfo.map.lat}&z=15&pt=${contactInfo.map.lng},${contactInfo.map.lat}`}
-            />
+            {hasConsent ? (
+              <iframe
+                title={contactInfo.map.label}
+                className="h-full w-full border-0"
+                loading="lazy"
+                src={`https://yandex.ru/map-widget/v1/?ll=${contactInfo.map.lng}%2C${contactInfo.map.lat}&z=15&pt=${contactInfo.map.lng},${contactInfo.map.lat}`}
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center bg-slate-100 text-sm text-slate-500">
+                Карта будет доступна после принятия cookie
+              </div>
+            )}
           </div>
         </div>
       </div>

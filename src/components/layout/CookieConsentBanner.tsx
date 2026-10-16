@@ -1,10 +1,10 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useCookieConsent } from '@/hooks/useCookieConsent'
 
 export function CookieConsentBanner() {
-  const [visible, setVisible] = useState(true)
+  const { hasConsent, giveConsent } = useCookieConsent()
 
-  if (!visible) return null
+  if (hasConsent) return null
 
   return (
     <div className="fixed bottom-6 left-6 z-50 flex w-80 max-w-[calc(100vw-3rem)] flex-col gap-3 rounded-xl bg-brand-teal p-5 text-sm text-white shadow-2xl">
@@ -18,7 +18,7 @@ export function CookieConsentBanner() {
       </p>
       <button
         type="button"
-        onClick={() => setVisible(false)}
+        onClick={giveConsent}
         className="self-end rounded bg-white px-6 py-2 font-semibold text-brand-teal transition-colors hover:bg-white/90"
       >
         Хорошо
