@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import type { IconLink } from '@/types/content'
 
 export function IconLinkGrid({
@@ -12,14 +13,14 @@ export function IconLinkGrid({
   return (
     <div className={gridClassName}>
       {items.map((item) => (
-        <a
+        <Link
           key={item.title}
-          href={item.href}
+          to={item.href}
           className="flex flex-col items-center gap-2 rounded-lg p-4 text-center transition-colors hover:bg-slate-50"
         >
           <img src={item.image} alt={item.title} className={imageClassName} />
           <span className="text-sm text-slate-700">{item.title}</span>
-        </a>
+        </Link>
       ))}
     </div>
   )

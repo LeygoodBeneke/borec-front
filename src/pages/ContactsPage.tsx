@@ -1,4 +1,5 @@
 import { useCookieConsent } from '@/hooks/useCookieConsent'
+import { Link } from 'react-router-dom'
 import { Breadcrumb } from '@/components/common/Breadcrumb'
 import { ProseSection } from '@/components/common/ProseSection'
 import { contactInfo } from '@/content/contacts'
@@ -40,14 +41,14 @@ export function ContactsPage() {
               <ProseSection html={contactInfo.directions} />
             </div>
 
-            <a
-              href={contactInfo.form.href}
+            <Link
+              to={contactInfo.form.href}
               className="inline-flex items-center gap-2 rounded-md px-6 py-3 font-semibold text-white"
               style={{ background: contactInfo.form.bg }}
             >
               <img src={contactInfo.icons.form} alt="" className="h-5 w-5" />
               {contactInfo.form.label}
-            </a>
+            </Link>
           </div>
 
           <div className="aspect-video overflow-hidden rounded-md">
