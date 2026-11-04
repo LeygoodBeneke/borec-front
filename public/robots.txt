@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://46.23.96.145/sitemap.xml
+Sitemap: https://leygoodbeneke.github.io/borec-front/sitemap.xml

@@ -9,9 +9,12 @@ if (!rootElement) {
   throw new Error('Root element #root not found')
 }
 
+// BASE_URL совпадает с base из vite.config.ts ("/" на VPS, "/borec-front/" на GitHub Pages)
+const basename = import.meta.env.BASE_URL.replace(/\/+$/, '') || '/'
+
 createRoot(rootElement).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <App />
     </BrowserRouter>
   </StrictMode>,
